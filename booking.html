@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav{
+                background-color: #FFA500;
+            }
+            nav ul{
+                list-style:none ;
+                margin:0px;
+                padding:0px;
+                overflow:hidden;
+            }
+            ul li{
+                float:left;
+            }
+            ul li a{
+                color: #111111;
+                display: block;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+            a:hover{
+                background-color: #feffff;
+            }
+            header{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 45px;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+            }
+            .background { 
+            position: absolute; 
+            height: 100%; 
+            width: 100%; 
+            background-image: url( "project\image\5124556.jpg"); 
+            background-size: cover; 
+            background-position: center; 
+            filter: blur(10px); 
+            z-index: -1; 
+        } 
+        
+        .text-container { 
+            text-align:justify;
+        } 
+        </style>
+    </head>
+    <header>
+        <center>
+            <font color="black">Wheels Booker</font>
+        </center>
+    </header><br>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="available cabs.html">Available Cabs</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact </a></li>
+            <link rel="stylesheet" href="book.css">
+
+        </ul>
+    </nav><br>
+    <div class="background"></div> 
+    <div class="text-container"> <br><br>
+    <form action="cab booking.py" method="post">
+            <fieldset>
+                <table align="center">
+                    
+              <b><h1><center>BOOK A WHEELERS</center></b></h1>
+              <tr>
+                <td>Name</td>
+                <td><input type="text" name="Name"></td>
+              </tr>
+              <tr>
+                <td>Number</td>
+                <td><input type="text" name="Number"></td>
+              </tr>
+              <tr>
+                <td>Pickup</td>
+                <td><input type="text" name="Pickup"></td>
+              </tr>
+              <tr>
+                <td>Cabname</td>
+                <td><input type="text" name="Cabname"></td>
+              </tr>
+              <tr>
+                <td>Destination</td>
+                <td><input type="text" name="Destination"></td>
+              </tr>
+              <tr>                      
+                <td>Wheelers</td>
+                    <td>
+                        <select if="myselect">
+                            <option value="option1">Type of wheelers</option>
+                            <option value="option1">Cab</option>
+                            <option value="option1">Scooty</option>
+                            <option value="option1">Mini van</option>
+                            <option value="option1">Auto</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                 <td>No.of.peoples</td>
+                 <td>
+                <select id="noOfPeople">
+                    <option value="option1">Only for cab and mini van</option>
+                  <option value="2">2</option>
+                  <option value="5">5</option>
+                  <option value="8">8</option>
+                </select> 
+               </td>   
+                </tr>
+            </div>
+    </table><br>
+       <center><a href="available cabs.html">Available Cabs</a></center><br>
+              <tr>
+                <center><td><input type="submit" value="register"></td></center>
+               </tr>
+            </fieldset>
+        </form>
+    </html>
+

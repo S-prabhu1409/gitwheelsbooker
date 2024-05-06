@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav{
+                background-color: #FFA500;
+            }
+            nav ul{
+                list-style:none ;
+                margin:0px;
+                padding:0px;
+                overflow:hidden;
+            }
+            ul li{
+                float:left;
+            }
+            ul li a{
+                color: #111111;
+                display: block;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+            a:hover{
+                background-color: #feffff;
+            }
+            header{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 45px;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+            }
+
+            table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fac20a;
+}
+            #frame {
+            margin: 0 auto;
+            width: 800px;
+            max-width: 100%;
+            text-align: center;
+        }
+ 
+        #frame input[type=radio] {
+            display: none;
+        }
+ 
+        #frame label {
+            cursor: pointer;
+            text-decoration: none;
+        }
+ 
+        #slides {
+            padding: 10px;
+            border: 5px solid rgb(236, 240, 236);
+            background: rgb(244, 244, 247);
+            position: relative;
+            z-index: 1;
+        }
+ 
+        #overflow {
+            width: 100%;
+            overflow: hidden;
+        }
+ 
+        #frame1:checked~#slides .inner {
+            margin-left: 0;
+        }
+ 
+        #frame2:checked~#slides .inner {
+            margin-left: -100%;
+        }
+ 
+        #frame3:checked~#slides .inner {
+            margin-left: -200%;
+        }
+ 
+        #frame4:checked~#slides .inner {
+            margin-left: -300%;
+        }
+        #frame5:checked~#slides .inner {
+            margin-left: -300%;
+        }
+ 
+        #slides .inner {
+            transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+            width: 400%;
+            line-height: 0;
+            height: 300px;
+        }
+ 
+        #slides .frame {
+            width: 25%;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #0c0b0b;
+        }
+ 
+        #slides .frame_1 {
+            background: white;
+        }
+ 
+        #slides .frame_2 {
+            background: white;
+        }
+ 
+        #slides .frame_3 {
+            background: white;
+        }
+ 
+        #slides .frame_4 {
+            background: white;
+        }
+        #slides .frame_5 {
+            background: white;
+        }
+ 
+        #controls {
+            margin: -180px 0 0 0;
+            width: 100%;
+            height: 50px;
+            z-index: 3;
+            position: relative;
+        }
+ 
+        #controls label {
+            transition: opacity 0.2s ease-out;
+            display: none;
+            width: 50px;
+            height: 50px;
+            opacity: .4;
+        }
+ 
+        #controls label:hover {
+            opacity: 1;
+        }
+ 
+        #frame1:checked~#controls label:nth-child(2),
+        #frame2:checked~#controls label:nth-child(3),
+        #frame3:checked~#controls label:nth-child(4),
+        #frame4:checked~#controls label:nth-child(5),
+        #frame5:checked~#controls label:nth-child(1){
+            background:
+                url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+            float: right;
+            margin: 0 -50px 0 0;
+            display: block;
+        }
+ 
+        #frame1:checked~#controls label:nth-last-child(2),
+        #frame2:checked~#controls label:nth-last-child(3),
+        #frame3:checked~#controls label:nth-last-child(4),
+        #frame4:checked~#controls label:nth-last-child(5),
+        #frame5:checked~#controls label:nth-last-child(1) {
+            background:
+                url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+            float: left;
+            margin: 0 0 0 -50px;
+            display: block;
+        }
+ 
+        #bullets {
+            margin: 150px 0 0;
+            text-align: center;
+        }
+ 
+        #bullets label {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: grey;
+            margin: 0 10px;
+        }
+ 
+        #frame1:checked~#bullets label:nth-child(1),
+        #frame2:checked~#bullets label:nth-child(2),
+        #frame3:checked~#bullets label:nth-child(3),
+        #frame4:checked~#bullets label:nth-child(5),
+        #frame5:checked~#controls label:nth-child(1) {
+            background: #444;
+        }
+ 
+        @media screen and (max-width: 900px) {
+ 
+            #frame1:checked~#controls label:nth-child(2),
+            #frame2:checked~#controls label:nth-child(3),
+            #frame3:checked~#controls label:nth-child(4),
+            #frame4:checked~#controls label:nth-child(5),
+            #frame5:checked~#controls label:nth-child(1)
+            #frame1:checked~#controls label:nth-last-child(2),
+            #frame2:checked~#controls label:nth-last-child(3),
+            #frame3:checked~#controls label:nth-last-child(4),
+            #frame4:checked~#controls label:nth-last-child(5),
+            #frame5:checked~#controls label:nth-last-child(1) {
+                margin: 0;
+            }
+ 
+            #slides {
+                max-width: calc(100% - 140px);
+                margin: 0 auto;
+            }
+        }
+        </style>
+
+    </head>
+    <header>
+        <center>
+            <font color="black">Wheels Booker</font>
+        </center>    
+    </header>
+    <nav>
+        <ul type="bullet">       
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="available cabs.html">Availabe Cabs</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      
+        
+        
+        
+    </ul> 
+    </nav><br>
+    <body>
+        <h1><b>AVAILABLE WHEELERS</b></h1><br><br><br><br>
+        
+        <div id="frame">
+            <input type="radio" name="frame" id="frame1" checked />
+            <input type="radio" name="frame" id="frame2" />
+            <input type="radio" name="frame" id="frame3" />
+            <input type="radio" name="frame" id="frame4" />
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="frame frame_1">
+                            <div class="frame-content">
+                               
+                                <img src="image\racing-car-orange-color-isolated-background_1308-69652.avif">
+                                 <h2><center>Cab</center></h2>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="frame frame_2">
+                            <div class="frame-content">
+                                <img src="image\flat-vector-illustration-three-wheeler-tuk-tuk-traditional-transportation-rickshaw-asia-transp_830469-3025.avif" width="250" >
+                                <h2><center>Auto</center></h2>
+                              </div>
+                            </div>
+                        <div class="frame frame_3">
+                            <div class="frame-content">
+                                    <img src="image\images.jpeg" alt="example gif" width="300" heigth="300">
+                                     <h2>Scooty</h2>
+                            </div>
+                        </div>
+                        <div class="frame frame_4">
+                            <div class="frame-content">
+                                <img src="image\vector-van-delivery-minivan-fast-delivery-logo_507816-253.avif" width="300">
+                                <h2>Mini Van</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="frame1"></label>
+                <label for="frame2"></label>
+                <label for="frame3"></label>
+                <label for="frame4"></label>
+                
+            </div>
+            <div id="bullets">
+                <label for="frame1"></label>
+                <label for="frame2"></label>
+                <label for="frame3"></label>
+                <label for="frame4"></label>
+               
+            </div><br>
+        </div><hr>
+   <br><br><br>
+   <b><center><h1>Pricing Table</center></b></h1>
+   <b><center><h4>Drop/Round Pricing</center></b></h4><br>
+    <table>
+        <tr>
+          <th>Vehicle type</th>
+          <th>Drop trip</th>
+          <th>Round Trip</th>
+        </tr>
+        <tr>
+          <td>Sedan Type Taxi<br>
+            (Aspire,Dzire,Etios,Xcent&Zest)</td>
+          <td>RS.12</td>
+          <td>RS.14</td>
+        </tr>
+        <tr>
+          <td>MUV Type Taxi<br>
+            (Xylo,Ertiga,Marazzo,Lodgy)</td>
+          <td>RS.18</td>
+          <td>RS.16</td>
+        </tr>
+        <tr>
+          <td>MUV Type Taxi<br>
+            (Innova)</td>
+          <td>RS.19</td>
+          <td>RS.16</td>
+        </tr>
+        <br>
+       
+      </table>
+      <b><center><h4>Tempo Traeller</h4></h5></center></b>
+      <table>
+        <tr>
+          <th>Description</th>
+          <th>Round trip</th>
+         
+        </tr>
+        <tr>
+          <td>Rate</td>
+          <td>RS.20/km</td>
+        </tr>
+        <tr>
+         
+          <td>Driver Betta</td>
+          <td>RS.500</td>
+        </tr>
+        <br>
+       
+      </table>
+      <b><h4><center>Outstation Package</center></h4></b>
+      <table>
+        <tr>
+          <th>Package type</th>
+          <th>Cab</th>
+          <th>Mini van</th>
+        </tr>
+        <tr>
+          <td><b>Half-day</b><br>
+        (6hrs,90 km)</td>
+          <td>RS.2100</td>
+          <td>RS.3000</td>
+        </tr>
+        <tr>
+          <td><b>Full-day</b><br>(10hrs,180kms)</td>
+          <td>RS.3100</td>
+          <td>RS.4000/td>
+        </tr>
+        <tr>
+          <td>Additional Hrs</td>
+          <td>RS.150/hr</td>
+          <td>RS.150/hr</td>
+        </tr>
+        <tr>
+            <td>Additional KMS</td>
+            <td>RS.12/km</td>
+            <td>RS.16/km</td>
+          </tr>
+     </table>
+     <b><h4><center>Local Package</center></h4></b>
+     <table>
+       <tr>
+         <th>scooty</th>
+         <th>Cab</th>
+         <th>Mini van</th>
+       </tr>
+       <tr>
+         <td>Rs.1390</td>
+         <td>RS.1900</td>
+         <td>RS.3400</td>
+        
+       </tr>
+       <tr>
+        <td>Rs.1550</td>
+        <td>RS.2150</td>
+        <td>RS.3400</td>
+      </tr>
+      <tr>
+        <td>Rs.1750</td>
+        <td>RS.2400</td>
+        <td>RS.3400</td>
+      </tr>
+      <tr>
+        <td>Rs.1900</td>
+        <td>RS.2000</td>
+        <td>RS.3400</td>
+      </tr>
+      <tr>
+        <td>Rs.1390</td>
+        <td>RS.1900</td>
+        <td>RS.3400</td>
+      </tr>
+      <tr>
+        <td>Rs.1870</td>
+        <td>RS.3850</td>
+        <td>RS.3400</td>
+      </tr>
+      <tr>
+        <td>Rs.1670</td>
+        <td>RS.4100</td>
+        <td>RS.3400</td>
+      </tr>
+      <tr>
+        <td>Rs.1790</td>
+        <td>RS.1490</td>
+        <td>RS.3400</td>
+       
+      </tr>
+      <tr>
+        <td>Rs.1500</td>
+        <td>RS.3400</td>
+        <td>RS.3400</td>
+      </tr>
+    
+      <tr>
+        <td>Rs.7950</td>
+        <td>RS.3390</td>
+        <td>RS.3400</td>
+       
+      </tr>
+    
+      <tr>
+        <td>Rs.7834</td>
+        <td>RS.1500</td>
+        <td>RS.3400</td>
+      </tr>
+    
+</table>
+
+
+    </body>
+ </html>    

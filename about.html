@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        nav{
+          background-color: #FFA500;
+            }
+            nav ul{
+                list-style:none ;
+                margin:0px;
+                padding:0px;
+                overflow:hidden;
+            }
+            ul li{
+                float:left;
+            }
+            ul li a{
+                color: #0f0f0f;
+                display: block;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+            a:hover{
+                background-color: #fafbfc;
+            }
+            header{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 45px;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-white">
+
+<!-- Navigation bar with social media icons -->
+<header>
+  <center>
+      <font color="black">Wheels Booker</font>
+  </center>    
+</header>
+<nav>
+  <ul type="bullet"> 
+  <li><a href="book.html"></a></li>      
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="available cabs.html">Availabe Cabs</a></li>
+  <li><a href="booking.html">Booking</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="tour.html">Tour</a></li>
+</ul> 
+</nav><br>
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1700px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-20 w3-orange">
+    <h1 class="w3-xxxlarge"><b>WELCOME</b></h1>
+    <h6>"Choose Comfort, Choose Us"</h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="image\pngtree-vibrant-3d-taxi-icon-with-map-marker-for-online-cab-services-picture-image_3928555.png" alt="Fashion Blog" width="1500" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">WHEELS BOOKER</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b></b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>ADVANCE FEATURES</h3>
+          <h5>Advance features in our Wheels Bookers   <span class="w3-opacity">  May 2, 2024</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image\images (2).jpeg" alt="Girl Hat" style="width:8%" class="w3-padding-16">
+          <p><strong>Real-time Availability</strong> 
+            Pick up at your location (door step)
+            Driver will arrive at your marked location via Whatsapp or App.</p>
+            <img src="image\images (3).jpeg" alt="Girl Hat" style="width:8%" class="w3-padding-16">
+            <p><strong> No Advance Payment</strong> 
+Providing multiple payment options like credit/debit cards, Net Banking, wallets, and cash-on-delivery available for customers.</p>
+              <img src="image\medical-first-aid-kit-3d-icon-illustration-png.webp" alt="Girl Hat" style="width:6%",style="height:6%" class="w3-padding-16">
+              <p><strong>Reliable Service</strong> 
+           GoGo Cabs currently operates across south india, nearly 2700+ drivers are operated to get a reliable service for customers</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="image\images (4).jpeg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Sajithra<span class="w3-opacity w3-medium">May 3, 2024, 6:32 PM</span></h4>
+                <p>Great Drive!</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Pet Friendly Service</h3>
+          <h5>Title description, <span class="w3-opacity">April 23, 2024</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image\images (5).jpeg" alt="Men in Hats" width="100%" class="w3-padding-16">
+          <p><strong>Our Booking!</strong>Trusted drivers put your dog or cat? s safety and comfort as their top priority. Your dog will always be in a carrier or buckled in with a harness and dog seat belt. Cats always ride in carriers.A pet taxi is a type of transportation taxi service that transports various pets. Some pet taxi services also provide pet ambulance, animal boarding and grooming services.
+            <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="image\3d-cute-cartoon-dentist-character-on-transparent-background-generative-ai-png.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Radha Krishnan<span class="w3-opacity w3-medium">April 26, 2024, 10:52 PM</span></h4>
+                <p>Love your Ride! Simply the best!</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image\FRlKsMIXMAEYBSU.jpeg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Peabhu<span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>Love Comfort Drive!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>WHO WE ARE?</h3>
+          <h5>Description, <span class="w3-opacity">April 7, 2024</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image\woman-salesperson-asking-sign-some-documents-car-dealership_651396-2022.jpg" alt="Runway" style="width:80%" class="w3-padding-16">
+          <p><strong>Dont miss!</strong>
+            Wheels Booker may be a  commercial center that meddles customers & businesses with all sorts of taxi benefit providers these days and those inside the flexible future.Wheels Booker Full-day rentals give a variety of bundle choices to travel inside Tamil Nadu.
+            Relax in comfort as capable drivers take you to your objective on time.<br> Essentially, call Wheels Booker and all courses of activity for the course of action of your transport will be managed. Call GooTaxi at any time of the day or night, and within minutes, a metered and well-appointed AC taxi will arrive to require you comfortably and safely to your objective.
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image\asian-smiling-woman-wearing-glasses-using-laptop.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Alexa <span class="w3-opacity w3-medium">April 10, 2024, 7:22 PM</span></h4>
+                <p>That was a great runway Ride! Thanks for the Drive.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image\2150771137.jpg" style="width:60px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John <span class="w3-opacity w3-medium">April 8, 2024, 10:32 PM</span></h4>
+                <p>Good service and Response</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image\lifestyle-people-living-boho-interiors.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Avanthika <span class="w3-opacity w3-medium">April 7, 2024, 9:12 PM</span></h4>
+                <p>Excellent service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-orange w3-margin">
+        <img src="/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-white">
+          <h4>WHY PEOPLE CHOOSE US?</h4>
+          <p>A few of the most reasons to select GooTaxi benefit is that we do have proficient rental cars and drivers to create your travel secure and comfortable. Too, we see simply hassle-free travel around Tamilnadu. We offer Outstation Cab administrations at a reasonable cost. We embrace the outstation taxi benefits in south India in Tamil Nadu. Goo taxi is comparatively simple to book. </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-orange w3-margin">
+        <div class="w3-container w3-padding w3-orange">
+          <h4>Tourist Places</h4>
+        </div><br>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <div class="w3-container w3-white">
+          <li class="w3-padding-16">
+            <img src="image\athirappily-falls.jpg" alt="Image" class="w3-left w3-margin-right" style="width:150px">
+            <span class="w3-large">Sirvani Falls</span>
+            <br>
+            <span>It's Located 36km  west of coimbatore in the Western Ghats</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image\2023-08-31.jpg" alt="Image" class="w3-left w3-margin-right" style="width:150px">
+            <span class="w3-large">Kolli Hils</span>
+            <br>
+            <span>It is a small mountain range located in centeral tamilnadu</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image\images (6).jpeg" alt="Image" class="w3-left w3-margin-right" style="width:150px">
+            <span class="w3-large">Yercadu </span>
+            <br>
+            <span>Yercadu is lpcated 100km above Erode</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image\images (7).jpeg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:150px">
+            <span class="w3-large">Topslip</span>
+            <br>
+            <span>Annamalai Tiger Reserve,earlier known as Indira Gandhi wildlife  sanctuary</span>
+          </li>
+        </li>
+        <li class="w3-padding-16">
+          <img src="image\images (9).jpeg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:150px">
+          <span class="w3-large">Valparai</span>
+          <br>
+          <span>Valpapari is located  3,5000feet above sea leavel on the annamalai hills range of Western Ghats</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="image\images (8).jpeg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:150px">
+          <span class="w3-large">Chidambaram</span>
+          <br>
+          <span>The city of Nataraja Chidambaram is the temple inthe district of cuddalore</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="image\monkey-falls.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:200px">
+          <span class="w3-large">Monkey Falls</span>
+          <br>
+          <span>Monkey falls is a nature falls,Monkey falls is above 30km form pollachi</span>
+        </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-orange">
+          <h4>  BOOKING</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+        
+            <img src="image\cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlMTFfM2RfcmVuZGVyX2NoYXJhY3Rlcl9vZl9hbl9pbmRpYW5fbWFuX2hvbGRpbmdfcF9lNjk2NWEwMi0zMDBiLTQxZjItODA2ZS1hMTkxOGZlOWU1MDgucG5n.webp" width="50">
+            <span class="w3-display-middle">Your Booking is here,<br><a href="booking.html">Booking</a></span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-orange">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Wheels booker</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Cab booking</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ride</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Wheelers</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Best ride</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mini van booking</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">all type website</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">pet friendlu cab</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">scooty booking</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">india's booking</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-orange">
+          <h4>Extra Feature</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="image\Mobile-Booking-Application.jpg" alt="Jeans" style="width:100%">Mobile app</p>
+            <p><img src="image\images (1).jpeg" alt="Jeans" style="width:100%">GPS Navigation</p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="image\images (11).jpeg" alt="Men in Hats" style="width:100%" class="w3-grayscale">No sos</p>
+            <p><img src="image\closeup-portrait-from-back-beautiful-woman-black-dress-cafeteria-she-is-speaking-phone-working-with-laptop_197531-1129.jpg" alt="Jeans" style="width:110%">PH communication</p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest offer and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav{
+                background-color: #FFA500;
+            }
+            nav ul{
+                list-style:none ;
+                margin:0px;
+                padding:0px;
+                overflow:hidden;
+            }
+            ul li{
+                float:left;
+            }
+            ul li a{
+                color: #0f0f0f;
+                display: block;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+            a:hover{
+                background-color: #fafbfc;
+            }
+            header{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 45px;
+            }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: orange;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+        </style>
+        </head>
+      
+    <header>
+        <center>
+            <font color="black">Wheels Booker</font>
+        </center>    
+    </header>
+    <nav>
+        <ul type="bullet"> 
+        <li><a href="book.html"></a></li>      
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="available cabs.html">Availabe Cabs</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul> 
+</nav><br><br>
+<body>
+<div class="header">
+  
+  <h1>Let's Talk</h1>
+  <p>Share your excitement wuth US</p>
+ 
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Contact us</h2>
+      <h5>We providing 24 x 7 Customer support</h5>
+      <img src="image\online-application-call-taxi-service-by-smart-phone-set-location-destination_1150-48863.avif" width="900" height="400">
+      <p>WHEELS BOOKER</p>
+      <p>Wheels Booker provide 24/7 customer support to help customers with their queries and concerns. This can be through phone, email etc</p>
+    </div>
+    <div class="card">
+      <img src="image\red-realistic-3d-map-pin-pointer-icon-isolated_227128-96.avif" height="50">
+      <h2>GPS Tracking System</h2>
+      <img src="image\images (1).jpeg" width="800" height="300">
+      <p>We track our vechicles cuurent location for your better saftey.Customer can share their live ride location with their family members as well.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="image\red-house-white-background-isolated-3d-illustration_356060-3652.avif" width="50">
+      <p>Corporate Office<br>
+        Sakthi vel Services (P) Ltd,<br>
+        #1226,k.kulam,<br>
+        Mettupalayam Road, Saibaba Colony,<br>
+        Erode - 638009.<br>
+        Landline: 0422 4567890
+        </p>
+    </div>
+    <div class="card">
+      <h3>Availability</h3>
+      <img src="image\outstations.png" width="90">
+      <p><b>Out Station Available</b></p>
+      <img src="image\images (1).png" width="90">
+      <p><b>Rental Available</b></p>
+      <img src="image\istockphoto-1432586042-612x612.jpg" width="90">
+      <p><b>Intra City</b></p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <img src="image\gmail_2965306.png" width="20" > <b> <a href="#">wheelsbooker@gmail.com</a></b></img> <br>
+      <img src="image\3d-realistic-isolated-isometric-whatapp-icon (1).jpg" width="30"><b>93455 38470</img> </b>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Rider's Thought</h2>
+  <p><center><b>Good Approch...Nice Customer interaction..Worth to call again!..</b></center></p>
+</div>
+
+</body>
+</html>
